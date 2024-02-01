@@ -13,7 +13,6 @@ provider "aws" {
 
 module "my_workerpool" {
   source = "github.com/spacelift-io/terraform-aws-spacelift-workerpool-on-ec2?ref=v2.3.1"
-}
 
   configuration = <<-EOT
     export SPACELIFT_TOKEN="${var.worker_pool_config}"
@@ -28,3 +27,4 @@ module "my_workerpool" {
   spacelift_api_key_endpoint = var.spacelift_api_key_endpoint
   spacelift_api_key_id       = var.spacelift_api_key_id
   spacelift_api_key_secret   = var.spacelift_api_key_secret
+}
