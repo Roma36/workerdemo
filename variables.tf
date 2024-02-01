@@ -3,12 +3,6 @@ variable "worker_pool_config" {
   type        = string
 }
 
-variable "spacelift_launcher_logs_timeout" {
-  description = "log timeout"
-  type        = string
-}
-
-
 variable "worker_pool_private_key" {
   description = "Private key for the worker pool"
   type        = string
